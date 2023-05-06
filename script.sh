@@ -34,7 +34,8 @@ if [ \"$resp\" == \"s\" ];
         then
 
             echo "Clonando..."
-            wget https://raw.githubusercontent.com/monitority/Jframe/main/jframe-monitority/src/main/java/jframe/monitority/dados/TelaLogin.java
+            wget https://raw.githubusercontent.com/monitority/Jframe/teste/jframe-monitority/target/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+            
             echo "Deseja executar? [s\n]"
 
             read get
