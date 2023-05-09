@@ -34,18 +34,18 @@ if [ \"$resp\" == \"s\" ];
         then
 
             echo "Clonando..."
-            wget https://raw.githubusercontent.com/monitority/Jframe/teste/jframe-monitority/target/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+            wget https://raw.githubusercontent.com/monitority/JframeEC2/main/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
             
             echo "Deseja executar? [s\n]"
 
             read get
 
-            if [ \"$get\" == \"s\" ]
+            if [ a\"$get\" == \"s\" ]
 
                 then 
 
                     echo "Executando..."
-                    java - jar
+                    java -jar jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
                     
             fi
 
