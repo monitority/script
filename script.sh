@@ -52,7 +52,7 @@ if [ \"$resp\" == \"s\" ];
                 if [ \"$resp\" == \"1\" ];
                     then
                         echo "Clonando..."
-                        wget https://raw.githubusercontent.com/monitority/Jframe/teste/jframe-monitority/target/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+                        wget https://raw.githubusercontent.com/monitority/JframeEC2/v2/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
                         echo "Deseja executar? [s\n]"
                         read get
                             if [ \"$get\" == \"s\" ]
@@ -66,13 +66,13 @@ if [ \"$resp\" == \"s\" ];
                 if [ \"$resp\" == \"2\" ];
                     then
                         echo "Clonando..."
-                        wget https://raw.githubusercontent.com/monitority/Jframe/teste/jframe-monitority/target/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+                        wget https://raw.githubusercontent.com/monitority/JframeEC2/v2//jframe-monitority-consolelog-1.0-SNAPSHOT-jar-with-dependencies.jar
                         echo "Deseja executar? [s\n]"
                         read get
                             if [ \"$get\" == \"s\" ]
                                 then 
                                     echo "Executando..."
-                                    java -jar jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+                                    java -jar jframe-monitority-consolelog-1.0-SNAPSHOT-jar-with-dependencies.jar
                             fi
                             else 
                             echo "Finalizando..."
