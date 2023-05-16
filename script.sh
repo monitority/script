@@ -45,15 +45,38 @@ echo "Deseja pegar o arquivo .JAR do GitHub [s\n]"
 read resp
 if [ \"$resp\" == \"s\" ];
         then
-            echo "Clonando..."
-                wget https://raw.githubusercontent.com/monitority/Jframe/teste/jframe-monitority/target/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
-            echo "Deseja executar? [s\n]"
-            read get
-            if [ \"$get\" == \"s\" ]
-                then 
-                    echo "Executando..."
-                        java -jar jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
-            fi
+            echo "Qual versão deseja\n
+                1 - GUI\n
+                2 - CLI\n"
+                read resp
+                if [ \"$resp\" == \"1\" ];
+                    then
+                        echo "Clonando..."
+                        wget https://raw.githubusercontent.com/monitority/Jframe/teste/jframe-monitority/target/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+                        echo "Deseja executar? [s\n]"
+                        read get
+                            if [ \"$get\" == \"s\" ]
+                                then 
+                                    echo "Executando..."
+                                    java -jar jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+                            fi
+                            else 
+                            echo "Finalizando..."
+                fi
+                if [ \"$resp\" == \"2\" ];
+                    then
+                        echo "Clonando..."
+                        wget https://raw.githubusercontent.com/monitority/Jframe/teste/jframe-monitority/target/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+                        echo "Deseja executar? [s\n]"
+                        read get
+                            if [ \"$get\" == \"s\" ]
+                                then 
+                                    echo "Executando..."
+                                    java -jar jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
+                            fi
+                            else 
+                            echo "Finalizando..."
+                fi
         else 
             echo "Finalizando..."
 fi
