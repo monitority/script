@@ -8,7 +8,7 @@ sleep 2
 
 echo  "$(tput setaf 6)[Monitor]:$(tput setaf 7) Verificando aqui se você possui o Java e o Docker instalado... $(tput setaf 2)(Aderval)"
 
-java --version
+java -version
  if [ $? = 0 ]; #se retorno for igual a 0
     then #entao,
         echo  "$(tput setaf 6)[Monitor]:$(tput setaf 7) Java instalado! Continuando com a configuração...$(tput setaf 2)(Aderval)"
@@ -27,7 +27,7 @@ docker --version
     else #se nao,
         echo  "$(tput setaf 6)[Monitor]:$(tput setaf 7) Docker não instalado! Prosseguindo com a instalação do Docker... $(tput setaf 2)(Aderval)"
         sleep 2
-        sudo apt install docker.io  -y #executa instalacao do docker
+        sudo apt install docker.io -y #executa instalacao do docker
         sudo systemctl start docker
         sudo systemctl enable docker
         clear
@@ -60,6 +60,7 @@ if [ \"$resp\" == \"s\" ];
                         wget https://raw.githubusercontent.com/monitority/JframeEC2/v2/jframe-monitority-1.0-SNAPSHOT-jar-with-dependencies.jar
                         echo  "$(tput setaf 6)[Monitor]:$(tput setaf 7) Criando o Container com a imagem do MySql ... $(tput setaf 2)(Aderval)"
         sleep 2
+        fi
         clear
         echo  "$(tput setaf 6)[Monitor]:$(tput setaf 7)Deseja executar? [s\n]  $(tput setaf 2)(Aderval)"
         sleep 2
