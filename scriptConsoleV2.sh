@@ -18,7 +18,8 @@ CREATE TABLE IF NOT EXISTS Dados (
    TempoTransferencia Varchar(45),
    NomeRede Varchar(45),
    Hostname Varchar(45),
-   NomeDeDominio Varchar(45));
+   NomeDeDominio Varchar(45),
+   memoriaPorc varchar(45));
 "
 
 PURPLE='0;35'
