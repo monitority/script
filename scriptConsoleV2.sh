@@ -109,7 +109,7 @@ if [ "$resp" == "s" ]; then
         echo  "$(tput setaf 6)[Monitor]:$(tput setaf 7) Clonando ... $(tput setaf 2)(Aderval)"
         sleep 2
         clear
-        git clone https://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@github.com/monitority/Monitor.git
+        git clone https://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@github.com/monitority/Jframe.git
         echo  "$(tput setaf 6)[Monitor]:$(tput setaf 7) Acessando a pasta para criar a imagem ... $(tput setaf 2)(Aderval)"
         cd Jframe/jframe-monitority-consolelog
         sleep 2
